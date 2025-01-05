@@ -22,13 +22,16 @@ public class Main {
         int tentativas = 0; // conta o número de tentativas feitas
         String senhaEncontrada = " "; // Inicio com vazio, só depois guarda a senha quando esta for encontrada
 
+
         // Criar um LOOP para testar as combinações 0000 a 9999
         // Use a estrutura de repeticao FOR,  é menor e mais organizado.
         for (int i = 0; i <= 9999; i++) {
             tentativas++; //conta mais uma tentativa
 
+
             String tentativaAtual = String.format("%04d", i); // formata a impressao da variavel para 4 digitos da contagem
 // teste da impressao           System.out.println(tentativaAtual);
+
 
 
             if (tentativaAtual.equals(senha)) { //compara a senha digitada com a repeticao do for
